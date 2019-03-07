@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:tag="header"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:tag="zoom"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/lay_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/touxiang"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    fresco:roundedCornerRadius="25dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerInParent="true"
+                    fresco:placeholderImage="@mipmap/nowebimg"
+                    android:background="@drawable/headround"
+                    android:padding="1dp"
+                    />
+                <ImageView
+                    android:id="@+id/bianji"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@mipmap/bianji"
+                    android:scaleType="centerCrop"
+                    android:layout_toRightOf="@id/touxiang"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/bianji_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="编辑"
+                    android:layout_toRightOf="@id/bianji"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="3dp"
+                    />
+                <ImageView
+                    android:id="@+id/isVip"
+                    android:layout_width="35dp"
+                    android:layout_height="12dp"
+                    android:src="@mipmap/vip_userhead"
+                    android:layout_toRightOf="@id/touxiang"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:visibility="invisible"
+
+                    />
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/text_style"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_sign"
+                style="@style/text_style"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="20dp"
+                android:text="全影号: "
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.message.OfficialMessageActivity">
+
+    <com.wuhenzhizao.titlebar.widget.CommonTitleBar
+        xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:titleBarColor="@color/colorBackground"
+        titlebar:statusBarColor="@color/colorBackground"
+        titlebar:centerText="官方消息"
+        titlebar:centerTextColor="@color/white"
+        titlebar:centerType="textView"
+        titlebar:leftDrawable="@mipmap/back"
+        titlebar:leftDrawablePadding="0dp"
+        titlebar:leftType="textView"
+        titlebar:showBottomLine="false"
+        />
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bkg"
+        >
+
+
+    </com.github.jdsjlzx.recyclerview.LRecyclerView>
+
+
+</LinearLayout>

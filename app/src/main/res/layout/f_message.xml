@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    >
+
+
+    <com.wuhenzhizao.titlebar.widget.CommonTitleBar
+        xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:titleBarColor="@color/colorBackground"
+        titlebar:statusBarColor="@color/colorBackground"
+        titlebar:centerText="@string/nav_title4"
+        titlebar:centerTextColor="@color/white"
+        titlebar:centerType="textView"
+        titlebar:showBottomLine="false"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/message_recycle"
+        android:layout_below="@id/titlebar"
+        android:background="@color/gray_bkg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/click_btn"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        style="@style/text_style"
+
+        android:text="半年VIP会员"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/title"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/jinruimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/jinru"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <TextView
+        style="@style/text_check_style"
+        android:id="@+id/price"
+        android:text="1000元/全年"
+        android:layout_toLeftOf="@id/jinruimg"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        />
+
+</RelativeLayout>

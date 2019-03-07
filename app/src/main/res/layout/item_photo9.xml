@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+    <FrameLayout
+        android:id="@+id/mTop1ImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/nowebimg"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toRightOf="@+id/mTopImageView"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.quanying.app.view.SquareImageView
+            android:id="@+id/details_img3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/nowebimg" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/mTopImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/nowebimg"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/mTop1ImageView">
+
+        <com.quanying.app.view.SquareImageView
+            android:id="@+id/details_img1"
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/nowebimg" />
+    </FrameLayout>
+
+ <FrameLayout
+        android:id="@+id/mTopImageView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/nowebimg"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/mTop1ImageView"
+        app:layout_constraintTop_toBottomOf="@+id/mTopImageView"
+     >
+
+        <com.quanying.app.view.SquareImageView
+            android:id="@+id/details_img2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/nowebimg" />
+    </FrameLayout>
+
+
+    <!--                              -->
+
+    <FrameLayout
+        android:id="@+id/mTopImageView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/nowebimg"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/mTop1ImageView5"
+        app:layout_constraintTop_toBottomOf="@id/mTopImageView3"
+        >
+
+        <com.quanying.app.view.SquareImageView
+            android:id="@+id/details_img4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/nowebimg" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_marginTop="8dp"
+        android:id="@+id/mTop1ImageView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/nowebimg"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/mTopImageView4"
+        app:layout_constraintTop_toBottomOf="@id/mTopImageView3"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.quanying.app.view.SquareImageView
+            android:id="@+id/details_img5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/nowebimg" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/mTop1ImageView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/nowebimg"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/mTopImageView4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTop1ImageView5">
+
+        <com.quanying.app.view.SquareImageView
+            android:id="@+id/details_img6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/nowebimg" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/mImageView07"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/nowebimg"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/mImageView08"
+        app:layout_constraintTop_toBottomOf="@+id/mTop1ImageView6">
+
+        <com.quanying.app.view.SquareImageView
+            android:id="@+id/details_img7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/nowebimg" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/mImageView08"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/nowebimg"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/mImageView07"
+        app:layout_constraintRight_toLeftOf="@+id/mImageView09"
+        app:layout_constraintTop_toBottomOf="@+id/mTop1ImageView6">
+
+
+        <com.quanying.app.view.SquareImageView
+            android:id="@+id/details_img8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/nowebimg" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/mImageView09"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/mImageView08"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTop1ImageView6">
+
+        <com.quanying.app.view.SquareImageView
+            android:id="@+id/details_img9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/nowebimg" />
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

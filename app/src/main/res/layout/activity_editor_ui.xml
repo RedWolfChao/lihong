@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bkg"
+    tools:context=".ui.user.EditorUI">
+
+
+    <com.wuhenzhizao.titlebar.widget.CommonTitleBar
+        xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:titleBarColor="@color/colorBackground"
+        titlebar:statusBarColor="@color/colorBackground"
+        titlebar:centerTextColor="@color/white"
+        titlebar:centerType="textView"
+        titlebar:leftText="@string/edit_diss"
+        titlebar:leftTextColor="@color/white"
+        titlebar:rightTextColor="@color/white"
+        titlebar:showBottomLine="false"
+        titlebar:leftDrawablePadding="0dp"
+        titlebar:leftType="textView"
+        titlebar:rightText="@string/edit_finish"
+        titlebar:rightType="textView"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center|left"
+        >
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textdefcolor"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/edit_hint"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/bluecursor"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textsum"
+        style="@style/text_style"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:text=""
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>

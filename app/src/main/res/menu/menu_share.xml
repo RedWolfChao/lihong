@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/moments"
+        android:icon="@mipmap/yh_qq_on"
+        android:title="@string/share_qq" />
+    <item
+        android:id="@+id/wechat"
+        android:icon="@mipmap/yh_qzone_on"
+        android:title="@string/share_qzon" />
+    <item
+        android:id="@+id/weibo"
+        android:icon="@mipmap/yh_wechat"
+        android:title="@string/share_wechat" />
+    <item
+        android:id="@+id/qq"
+        android:icon="@mipmap/yh_wxcircle"
+        android:title="@string/share_wxcircle" />
+
+</menu>

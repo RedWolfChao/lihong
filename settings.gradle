@@ -1,0 +1,4 @@
+include ':app'
+include ':dialoglibrary'
+include ':danmukulight'
+include ':library', ':library-addition', ':xnumberkeyboard',':pullzoom',':easeui'

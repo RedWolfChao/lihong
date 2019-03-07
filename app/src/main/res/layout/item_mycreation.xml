@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/userpage_ui"
+
+    >
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="0.8dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/dividing_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="0.8dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/dividing_light"
+        app:layout_constraintTop_toBottomOf="@+id/context_title"
+        fresco:layout_constraintEnd_toEndOf="parent"
+        fresco:layout_constraintHorizontal_bias="0.0"
+        fresco:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/praise_img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/zan"
+        app:layout_constraintBottom_toTopOf="@+id/head_line"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/praise_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text=""
+        android:textColor="@color/tab_normal_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/message_img"
+        app:layout_constraintStart_toEndOf="@+id/message_img"
+        app:layout_constraintTop_toTopOf="@+id/message_img" />
+
+    <ImageView
+        android:id="@+id/message_img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/xiaoxi"
+        app:layout_constraintBottom_toTopOf="@+id/head_line"
+        app:layout_constraintStart_toEndOf="@+id/message_text"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/del_img"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/up_del"
+        app:layout_constraintBottom_toTopOf="@+id/head_line"
+        app:layout_constraintEnd_toStartOf="@+id/del_text"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:text=""
+        android:textColor="@color/tab_normal_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/praise_img"
+        app:layout_constraintStart_toEndOf="@+id/praise_img"
+        app:layout_constraintTop_toTopOf="@+id/praise_img" />
+
+    <TextView
+        android:id="@+id/production_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="8dp"
+        android:text="共1张"
+        android:textColor="@color/tab_normal_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/head_line"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/del_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="8dp"
+        android:text="删除"
+        android:textColor="@color/tab_normal_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/production_text"
+        app:layout_constraintVertical_bias="1.0"
+        fresco:layout_constraintBottom_toTopOf="@+id/head_line"
+        fresco:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        fresco:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/context_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="8dp"
+        android:enabled="true"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/tab_normal_color"
+        android:textSize="12sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/context_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:enabled="true"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/black_dft"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        fresco:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/view4">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img1"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:scaleType="centerCrop"
+            fresco:placeholderImage="@mipmap/nowebimg" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img2"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:scaleType="centerCrop"
+
+            fresco:placeholderImage="@mipmap/nowebimg"
+
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img3"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:scaleType="centerCrop"
+
+            fresco:placeholderImage="@mipmap/nowebimg" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/head_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_bkg"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

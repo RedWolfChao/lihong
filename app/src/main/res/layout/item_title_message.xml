@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/xx_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        >
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/xx_tz"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/xx_tz"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:id="@+id/xx_tz_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_style"
+                android:text="通知"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                />
+
+
+        </LinearLayout> <LinearLayout
+        android:id="@+id/xx_hd"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/xx_xx"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_style"
+            android:text="互动"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            />
+
+
+    </LinearLayout> <LinearLayout
+        android:id="@+id/xx_hy"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"         android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/xx_hy"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_style"
+            android:text="会员"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            />
+
+
+    </LinearLayout> <LinearLayout
+        android:id="@+id/xx_kf"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/xx_kf"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_style"
+            android:text="客服"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            />
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

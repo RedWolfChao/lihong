@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/head_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            fresco:roundedCornerRadius="25dp"
+            android:scaleType="centerCrop"
+            fresco:placeholderImage="@mipmap/nowebimg"
+            />
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black_dft"
+            android:text="123123123"
+            android:singleLine="true"
+            android:layout_marginLeft="8dp"
+            />
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123123"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+
+            />
+
+
+    </LinearLayout>
+
+
+    
+
+
+
+<TextView
+    android:id="@+id/rep_name"
+    android:layout_below="@id/title_head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="58dp"
+    android:textSize="14sp"
+    android:textColor="@color/gray"
+    android:layout_marginRight="10dp"
+    android:text=""
+    android:layout_marginBottom="14dp"
+    android:lineSpacingMultiplier="1.3"
+    />
+
+<TextView
+    android:id="@+id/message_text"
+    android:layout_below="@id/rep_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="58dp"
+    android:textSize="14sp"
+    android:textColor="@color/gray"
+    android:layout_marginRight="10dp"
+    android:text=""
+    android:layout_marginBottom="14dp"
+    android:lineSpacingMultiplier="1.3"
+    />
+
+
+</RelativeLayout>

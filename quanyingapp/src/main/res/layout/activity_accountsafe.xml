@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.qyw.newdemo.app.activity.navuser.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bkg"
+        >
+
+        <include layout="@layout/title_blue"/>
+
+        <LinearLayout
+            android:id="@+id/changepwd_button"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_black"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="@string/changepassword_changepwd" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:background="@mipmap/ic_right_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/changupdatepnub_button"
+            android:layout_below="@id/changepwd_button"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                style="@style/text_black"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="@string/accountsafe_updatephonenub" />
+
+            <TextView
+                style="@style/text_black"
+                android:text="11011011011"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:background="@mipmap/ic_right_gray" />
+        </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>

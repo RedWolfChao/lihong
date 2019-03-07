@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_title_bg">#FF960B</color>
+    <color name="color_text_bg">#7fff0000</color>
+    <color name="color_bg">#f3f6f8</color>
+    <color name="black">#000000</color>
+    <color name="tm">#80000000</color>
+    <color name="tm_d">#E17998</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#CECECE</color>
+    <color name="colorBackground">#3789EF</color>
+    <color name="black_dft">#9B9B9B</color>
+    <color name="colorblack">#000000</color>
+    <color name="divbck">#d7d7d7</color>
+    <color name="translate">#00000000</color>
+    <color name="dividing_light">#f0f0f0</color>
+    <color name="gray_bkg">#EEF4F4</color>
+    <color name="item2_bck">#EEF4F4</color>
+    <color name="red">#7fff0000</color>
+    <color name="hintcolor">#DBDBDB</color>
+    <color name="searcgcolor">#F1EFF5</color>
+    <color name="graY">#EFEFEF</color>
+    <color name="style_color_main">#3789EF</color><!--主题色-->
+</resources>

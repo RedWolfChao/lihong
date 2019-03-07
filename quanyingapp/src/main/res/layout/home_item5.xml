@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <View style="@style/horizontal_divider_light" />
+
+
+    <ImageView
+        android:id="@+id/homeitem_img"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/item2_img1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/homeitem_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/homeitem_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:lineSpacingExtra="3dp"
+            android:text="我只是想看看这一段话会不会超出我只是想看看这一段话会"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/homeitem_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="12月12日"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

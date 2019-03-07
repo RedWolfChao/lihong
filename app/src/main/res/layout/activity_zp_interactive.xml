@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/hd_ll"
+    tools:context=".ui.message.ZpInteractiveActivity">
+
+    <com.wuhenzhizao.titlebar.widget.CommonTitleBar
+        xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:titleBarColor="@color/colorBackground"
+        titlebar:statusBarColor="@color/colorBackground"
+        titlebar:centerText="作品互动"
+        titlebar:centerTextColor="@color/white"
+        titlebar:centerType="textView"
+        titlebar:leftDrawable="@mipmap/back"
+        titlebar:leftDrawablePadding="0dp"
+        titlebar:leftType="textView"
+        titlebar:showBottomLine="false"
+        />
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bkg"
+        >
+
+
+    </com.github.jdsjlzx.recyclerview.LRecyclerView>
+
+    <LinearLayout
+        android:id="@+id/edit_ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+        <EditText
+            android:id="@+id/details_msg_edit"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/showroomedit_style"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left"
+            android:hint="@string/showroom_hint"
+            android:paddingLeft="5dp"
+            android:textSize="12sp"
+            android:lines="1"
+            />
+        <TextView
+            android:id="@+id/details_msg_send"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/showroomedit_style"
+            android:text="@string/showroom_send"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

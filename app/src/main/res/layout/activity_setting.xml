@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bkg"
+    tools:context=".ui.user.SettingActivity">
+
+    <com.wuhenzhizao.titlebar.widget.CommonTitleBar
+        xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:titleBarColor="@color/colorBackground"
+        titlebar:statusBarColor="@color/colorBackground"
+        titlebar:centerText="@string/nav_title5_item6"
+        titlebar:centerTextColor="@color/white"
+        titlebar:centerType="textView"
+        titlebar:leftDrawable="@mipmap/back"
+        titlebar:leftDrawablePadding="0dp"
+        titlebar:showBottomLine="false"
+        titlebar:leftType="textView"
+        />
+
+    <LinearLayout
+        android:id="@+id/setting_item1"
+        android:layout_below="@id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_style"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/setting_item1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:background="@mipmap/jinru" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_item2"
+        android:layout_below="@id/setting_item1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            style="@style/text_style"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/setting_item2" />
+
+        <ch.ielse.view.SwitchView
+            android:id="@+id/msg_swi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/setting_item_view1"
+        android:layout_below="@id/setting_item2"
+        style="@style/horizontal_divider_light"
+        />
+    <LinearLayout
+        android:id="@+id/setting_item3"
+        android:layout_below="@id/setting_item_view1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_style"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/setting_item3" />
+
+        <TextView
+            android:id="@+id/cache_text"
+            style="@style/text_style"
+            android:text=""
+            android:layout_marginRight="10dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:background="@mipmap/jinru" />
+    </LinearLayout>
+    <View
+        android:id="@+id/setting_item_view2"
+        android:layout_below="@id/setting_item3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+    <LinearLayout
+        android:id="@+id/setting_item4"
+        android:layout_below="@id/setting_item_view2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_style"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/setting_item4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:background="@mipmap/jinru" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_out"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            style="@style/text_check_style"
+            android:text="@string/setting_outuser"
+          
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

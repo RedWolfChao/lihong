@@ -1,0 +1,72 @@
+//noinspection GradleCompatible
+apply plugin: 'com.android.application'
+
+android {
+
+  compileSdkVersion 27
+  buildToolsVersion '27.0.0'
+
+  defaultConfig {
+    applicationId "com.quanying.app"
+    minSdkVersion 19
+    targetSdkVersion 28
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+    }
+  }
+  repositories {
+
+    flatDir { dirs 'libs' }
+    maven {
+      url "https://www.jitpack.io"
+    }
+  }
+  lintOptions {
+    disable "ResourceType"
+  }
+}
+
+dependencies {
+  compile files('libs/alipaySdk-20160111.jar')
+  compile files('libs/androidsvg-1.2.1.jar')
+  compile files('libs/GifView.jar')
+  compile files('libs/jpush-android-2.0.5.jar')
+  compile files('libs/libammsdk.jar')
+  compile files('libs/MobCommons.jar')
+  compile files('libs/MobTools.jar')
+  compile files('libs/ShareSDK-Alipay-2.6.6.jar')
+  compile files('libs/ShareSDK-Core-2.6.6.jar')
+  compile files('libs/ShareSDK-Email-2.6.6.jar')
+  compile files('libs/ShareSDK-QQ-2.6.6.jar')
+  compile files('libs/ShareSDK-QZone-2.6.6.jar')
+  compile files('libs/ShareSDK-ShortMessage-2.6.6.jar')
+  compile files('libs/ShareSDK-SinaWeibo-2.6.6.jar')
+  compile files('libs/ShareSDK-Wechat-2.6.6.jar')
+  compile files('libs/ShareSDK-Wechat-Core-2.6.6.jar')
+  compile files('libs/ShareSDK-Wechat-Moments-2.6.6.jar')
+  compile files('libs/universal-image-loader-1.9.4-with-sources.jar')
+  compile(name: 'AlivcPlayer', ext: 'aar')
+  compile 'com.jakewharton:butterknife:8.7.0'
+  compile 'com.automationrockstars:design:1.0.5'
+  compile 'com.zhy:okhttputils:2.6.2'
+  compile 'com.squareup.picasso:picasso:2.5.2'
+  compile 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+  compile 'org.greenrobot:eventbus:3.1.1'
+  compile 'com.android.support.constraint:constraint-layout:1.0.2'
+  annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+  compile 'com.github.jokermonn:permissions4m:2.1.2-lib'
+  annotationProcessor 'com.github.jokermonn:permissions4m:2.1.2-processor'
+  implementation 'com.android.support:appcompat-v7:27.0.0-rc01'
+  compile 'com.android.support:design:27.0.0-rc01'
+  implementation project(':library')
+  implementation project(':library-addition')
+  implementation project(':xnumberkeyboard')
+}

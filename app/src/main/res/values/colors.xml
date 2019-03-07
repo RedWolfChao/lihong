@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F22F5B</color>
+    <color name="colorPrimaryDark">#F22F5B</color>
+    <color name="colorAccent">#F22F5B</color>
+
+    <color name="tab_gb">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="tab_normal_color">#ACACAC</color>
+    <color name="showroombasecolor">#F2F2F2</color>
+    <color name="tab_selected_color">#666666</color>
+    <color name="textdefcolor">#333333</color>
+
+    <color name="unreadTextColor">#00ff00</color>
+    <color name="msgTextColor">#00ff00</color>
+
+        <color name="gray">#AFAFAF</color>
+        <color name="colorBackground">#F22F5B</color>
+        <color name="searchground">#EF6C82</color>
+        <color name="black_dft">#4F4F4F</color>
+        <color name="colorblack">#000000</color>
+        <color name="translate">#00000000</color>
+        <color name="dividing_light">#D7D7D7</color>
+        <color name="gray_bkg">#EEF4F4</color>
+        <color name="item2_bck">#EEF4F4</color>
+        <color name="recruit_edit">#73D2FE</color>
+        <color name="loginbtn">#28BBFE</color>
+        <color name="loginbtn_4">#4428BBFE</color>
+        <color name="recruit_yltextcolor">#EE8135</color>
+
+    <color name="tm_d">#E17998</color>
+
+    <color name="searcgcolor">#F1EFF5</color>
+    <color name="divbck">#d7d7d7</color>
+    <color name="tm">#80000000</color>
+    <color name="tm_2">#20000000</color>
+    <color name="color_title_bg">#FF960B</color>
+    <color name="zbbkg">#30001A</color>
+
+
+    <color name="light_green">#89F9DF</color>
+    <color name="live_yellow">#E1AF4A</color>
+
+
+
+
+
+
+
+
+</resources>

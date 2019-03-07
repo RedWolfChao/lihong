@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/head_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        fresco:roundedCornerRadius="100dp"
+        android:scaleType="centerCrop"
+        fresco:placeholderImage="@mipmap/nowebimg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/show_ll"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:background="@color/gray_bkg"
+        >
+
+        <ImageView
+            android:id="@+id/show_ll_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/gray_bkg"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/show_ll_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="center|left"
+            android:padding="5dp"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/name_btn"
+        android:layout_toRightOf="@id/head_img"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:gravity="left"
+        android:layout_toLeftOf="@id/show_ll"
+        android:layout_marginRight="15dp"
+        >
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black_dft"
+            android:text="我也不知道我的名"
+            android:singleLine="true"
+            />
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:11"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/context_tome"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black_dft"
+        android:text="回复我："
+        android:singleLine="true"
+        android:layout_below="@id/head_img"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/show_ll"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/context_"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black_dft"
+        android:text="我也不知道我的名"
+        android:singleLine="true"
+        android:layout_below="@id/context_tome"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/show_ll"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_bkg"
+        android:layout_below="@id/context_"
+        />
+
+</RelativeLayout>

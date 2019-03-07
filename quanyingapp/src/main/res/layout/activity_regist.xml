@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:background="@mipmap/login_img_m"
+    Android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back_img"
+            />
+
+        <com.qyw.newdemo.app.view.StateButton
+
+            android:id="@+id/registbtn_personage"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="100dp"
+            android:padding="10dp"
+            android:text="@string/regist_personage"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:normalBackgroundColor="@color/colorBackground"
+            app:pressedBackgroundColor="@color/colorBackground"
+            app:radius="2dp"
+            app:round="true" />
+
+        <com.qyw.newdemo.app.view.StateButton
+            android:layout_below="@id/registbtn_personage"
+            android:id="@+id/registbtn_company"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+
+            android:text="@string/regist_company"
+            android:textSize="18sp"
+            app:radius="2dp"
+            app:round="true"
+
+            app:normalStrokeColor="@color/colorBackground"
+            app:normalStrokeWidth="0.5dp"
+            app:normalTextColor="@color/colorBackground"
+            app:pressedStrokeColor="@color/colorBackground"
+            app:pressedStrokeWidth="1dp"
+            app:pressedTextColor="@color/colorBackground"
+            app:unableStrokeColor="@color/colorBackground"
+            app:unableStrokeWidth="0.5dp"
+            app:unableTextColor="@color/colorBackground"/>
+
+
+        <LinearLayout
+            android:layout_below="@id/registbtn_company"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="注册即代表同意"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用条款"
+                android:textSize="16sp"
+                android:textColor="@color/colorBackground"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="和"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隐私政策"
+                android:textSize="16sp"
+                android:textColor="@color/colorBackground"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray_bkg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/recruitment_item_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/item2_img1"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/recruitment_item_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/recruit_yltextcolor"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20sp"
+        android:text="3K-4K"
+        android:textSize="18sp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/recruitment_item_img"
+        android:layout_centerVertical="true"
+
+        >
+        <TextView
+            android:id="@+id/recruitment_item_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black_dft"
+            android:text="儿童摄影师"
+
+            />
+        <TextView
+            android:id="@+id/recuritment_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="用户名"
+            android:textColor="@color/black_dft"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/gps_img"
+                android:layout_marginRight="5dp"
+                />
+            <TextView
+                android:id="@+id/recuritment_item_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:text="潍坊市奎文区"
+                android:textSize="14sp"
+                />
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_bkg"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/bag_img"
+                />
+            <TextView
+                android:id="@+id/recuritment_item_workdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:text="1-3年"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/recuritment_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:text="今天"
+            android:textSize="14sp"
+
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

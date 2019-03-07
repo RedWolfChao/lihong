@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/recuritment_leftview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="90dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/recruit_block"
+                />
+            <TextView
+                android:id="@+id/recuritment_lefttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="企业中心"
+                android:textColor="@color/black_dft"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="0.8dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/gray_bkg"/>
+        <LinearLayout
+            android:id="@+id/recuritment_centerview"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="90dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/recruit_resume"
+                />
+            <TextView
+                android:id="@+id/recuritment_centertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="发布职位"
+                android:textColor="@color/black_dft"
+                android:textSize="16sp"
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="0.8dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/gray_bkg"/>
+        <LinearLayout
+            android:id="@+id/recuritment_rightview"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="90dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/recruit_mailbox"
+                />
+            <TextView
+                android:id="@+id/recuritment_righttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="简历信箱"
+                android:textColor="@color/black_dft"
+                android:textSize="16sp"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/gray_bkg"/>
+
+</LinearLayout>

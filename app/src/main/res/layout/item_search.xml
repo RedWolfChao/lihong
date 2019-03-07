@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/check_btn"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+       android:orientation="horizontal"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        >
+
+        <TextView
+            android:id="@+id/qiyename"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="lidazhuang小青年"
+            android:gravity="center|left"
+            android:textColor="@color/tab_selected_color"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:id="@+id/qy_show"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/qiyetag"
+            android:padding="15dp"
+            />
+        
+    </LinearLayout>
+    
+    <View
+        style="@style/devide_line_eee"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        />
+    
+    
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/loginbkg"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@mipmap/loginbkg"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/back_btn"
+        android:layout_width="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:id="@+id/newlogin_head_ui"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/loginhead"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/login_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/login_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="登陆"
+
+                />
+            <View
+                android:id="@+id/login_line"
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"
+                />
+
+            
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/regist_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/regist_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/tab_normal_color"
+                android:text="注册"
+
+                />
+            <View
+                android:id="@+id/regist_line"
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"
+                android:visibility="invisible"
+                />
+
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <com.quanying.app.view.CustomViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/newlogin_head_ui"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
+
+        ></com.quanying.app.view.CustomViewPager>
+
+</RelativeLayout>

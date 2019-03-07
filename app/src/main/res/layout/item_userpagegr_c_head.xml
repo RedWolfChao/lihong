@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:id="@+id/up_gr_gz"
+                android:text="0"
+                android:textColor="@color/textdefcolor"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+
+                android:text="@string/showroom_nav2"
+                android:textColor="@color/textdefcolor"
+                />
+
+        </LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:text="0"
+                android:id="@+id/up_gr_fs"
+                android:textColor="@color/textdefcolor"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/userpage_fans"
+                android:textColor="@color/textdefcolor"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            />
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+              android:gravity="center"
+              android:visibility="gone"
+            >
+              <ImageView
+
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@mipmap/sixin"
+                  android:id="@+id/up_gr_sx"
+                  android:visibility="invisible"
+                  />
+        </LinearLayout>
+
+  <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+              android:gravity="center"
+      android:layout_marginRight="20dp"
+            >
+              <ImageView
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:src="@mipmap/guanzhu"
+                  android:id="@+id/up_gr_gz_btn"
+                 android:paddingTop="16dp"
+                  android:paddingLeft="16dp"
+                  android:paddingRight="16dp"
+                    android:clickable="true"
+                  />
+        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    <TextView
+        android:id="@+id/up_gr_sigin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text=""
+        android:textColor="@color/tab_selected_color"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        />
+
+
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/qy_showimg"
+        android:tag="content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:id="@+id/qy_showimg_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qy_ui_img1"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/tpyy"
+                    />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/qy_img1"
+                    android:layout_width="103dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/nowebimg"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/qy_del_btn1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/zb_cha"
+                    android:layout_marginLeft="80dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qy_ui_img2"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/tpyy"
+                    />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/qy_img2"
+                    android:layout_width="103dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/nowebimg"
+                    />
+                <ImageView
+                    android:id="@+id/qy_del_btn2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/zb_cha"
+                    android:layout_marginLeft="80dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qy_ui_img3"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/tpyy"
+                    />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/qy_img3"
+                    android:layout_width="103dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/nowebimg"
+                    />
+                <ImageView
+                    android:id="@+id/qy_del_btn3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/zb_cha"
+                    android:layout_marginLeft="80dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qy_ui_img4"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/tpyy"
+                    />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/qy_img4"
+                    android:layout_width="103dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/nowebimg"
+                    />
+                <ImageView
+                    android:id="@+id/qy_del_btn4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                  android:src="@mipmap/zb_cha"
+                    android:layout_marginLeft="80dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qy_ui_img5"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/tpyy"
+                    />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/qy_img5"
+                    android:layout_width="103dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    fresco:placeholderImage="@mipmap/nowebimg"
+                    />
+                <ImageView
+                    android:id="@+id/qy_del_btn5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:background="@mipmap/zb_cha"
+                    android:layout_marginLeft="80dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <ImageView
+
+                android:id="@+id/add_imgs"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:src="@mipmap/addqy"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="公司案例、产品"
+        android:textColor="@color/tab_selected_color"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="@color/gray_bkg"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/gray_bkg"
+        ></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_btn"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/head_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            fresco:roundedCornerRadius="25dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/headround"
+            />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+            android:id="@+id/fans_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text=""
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/fans_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginRight="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/add_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/yitianjia"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontal_divider_light"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

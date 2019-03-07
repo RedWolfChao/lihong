@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/head_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/headround"
+        />
+    
+    <LinearLayout
+        android:id="@+id/name_btn"
+        android:layout_toRightOf="@id/head_img"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        >
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black_dft"
+        android:text="我也不知道我的名"
+        android:singleLine="true"
+    />
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:11"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+<TextView
+    android:id="@+id/message_text"
+    android:layout_below="@id/name_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/head_img"
+    android:layout_marginLeft="10dp"
+    android:textSize="14sp"
+    android:textColor="@color/gray"
+    android:layout_marginRight="10dp"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:text="哦吼吼哈哈哈哈我看看东西怎么样哈哈哈哈哈嗯1111111111111111111111111嗯嗯呢"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dp"
+    android:visibility="gone"
+    />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/dividing_light"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

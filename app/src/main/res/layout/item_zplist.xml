@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/userpage_ui"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/content_ll"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="15dp"
+    android:gravity="center_vertical"
+
+    >
+    <TextView
+        android:id="@+id/context_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:enabled="true"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="123123"
+        android:textColor="@color/black_dft"
+        android:textSize="16sp"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:id="@+id/context_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="1233123"
+        android:textColor="@color/tab_normal_color"
+        android:textSize="12sp"
+/>
+</LinearLayout>
+    <View
+        android:id="@+id/linehead"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/dividing_light"
+        android:layout_below="@id/content_ll"
+        />
+
+    <LinearLayout
+        android:id="@+id/zpimg_ui"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@id/linehead"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img1"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:scaleType="centerCrop"
+            fresco:placeholderImage="@mipmap/nowebimg" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img2"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:scaleType="centerCrop"
+
+            fresco:placeholderImage="@mipmap/nowebimg"
+
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img3"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:scaleType="centerCrop"
+
+            fresco:placeholderImage="@mipmap/nowebimg" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/cao"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/dividing_light"
+        android:layout_below="@id/zpimg_ui"
+        />
+
+    <LinearLayout
+        android:id="@+id/footui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/cao"
+        >
+
+        <ImageView
+            android:id="@+id/praise_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/zan"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="999"
+            android:textColor="@color/tab_normal_color"
+            android:textSize="12sp"
+             />
+
+        <ImageView
+            android:id="@+id/message_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@mipmap/xiaoxi"
+            android:layout_marginLeft="20dp"
+         />
+        <TextView
+            android:id="@+id/praise_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="123"
+            android:layout_weight="1"
+            android:textColor="@color/tab_normal_color"
+            android:textSize="12sp"
+     />
+
+        <ImageView
+            android:id="@+id/del_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+           android:padding="12dp"
+            android:src="@mipmap/up_del"
+            />
+
+        <TextView
+            android:id="@+id/del_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textColor="@color/tab_normal_color"
+            android:textSize="12sp"
+         />
+        <TextView
+            android:id="@+id/production_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共1张"
+            android:textColor="@color/tab_normal_color"
+            android:textSize="12sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    android:layout_below="@id/footui"
+    android:background="@color/gray_bkg"
+    />
+</RelativeLayout>

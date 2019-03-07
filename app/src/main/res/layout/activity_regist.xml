@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/register_viewgroup"
+    tools:context=".ui.user.RegistActivity">
+    <com.wuhenzhizao.titlebar.widget.CommonTitleBar
+        xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:titleBarColor="@color/white"
+        titlebar:statusBarColor="@color/white"
+        titlebar:centerText="@string/regist_title"
+        titlebar:centerTextColor="@color/black_dft"
+        titlebar:centerType="textView"
+        titlebar:showBottomLine="false"
+        titlebar:leftDrawable="@mipmap/blueback"
+        titlebar:leftDrawablePadding="0dp"
+        titlebar:leftType="textView"
+        />
+
+    <LinearLayout
+
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/textlogo"
+        />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="+86"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/forget_tel"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:hint="@string/forget_tel"
+            android:textColor="@color/textdefcolor"
+            android:textColorHint="@color/dividing_light"
+            android:textCursorDrawable="@drawable/bluecursor"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:lines="1"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/dividing_light" />
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/forget_code"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:hint="@string/forget_code"
+            android:textColor="@color/textdefcolor"
+            android:textColorHint="@color/dividing_light"
+            android:textCursorDrawable="@drawable/bluecursor"
+            android:inputType="number"
+            android:singleLine="true"
+            android:lines="1"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/getcode_btn"
+            android:layout_width="75dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/getcode_bg"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/getcode_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forget_getcode"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/dividing_light" />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/forget_newpass"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:hint="@string/forget_newp"
+            android:textColor="@color/textdefcolor"
+            android:textColorHint="@color/dividing_light"
+            android:textCursorDrawable="@drawable/bluecursor"
+
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:lines="1"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/dividing_light" />
+
+    <LinearLayout
+        android:id="@+id/finish_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/loginbtn_gray_bg"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regist_finish"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:id="@+id/register_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:paddingBottom="10dp"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="注册即代表同意"
+            android:textColor="@color/dividing_light"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/sytk_btn"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="使用条款"
+            android:textColor="@drawable/textbluecheck"
+            android:textSize="12sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="和"
+            android:textColor="@color/dividing_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/yszc_btn"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="隐私政策"
+            android:textColor="@drawable/textbluecheck"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

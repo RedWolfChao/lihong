@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/gray_bkg"
+/>
+
+    <LinearLayout
+        android:id="@+id/jump_userpage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/details_head_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            fresco:roundedCornerRadius="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/userTag"
+            android:padding="2dp"
+            android:layout_marginStart="10dp"
+
+          />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+
+                style="@style/text_style"
+                android:id="@+id/details_name"
+                android:text="诸葛亮的好"
+                 />
+
+            <TextView
+                android:id="@+id/details_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/gray"
+
+                android:text="3小时前"
+                android:textSize="12sp"
+                 />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jinru"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/gray_bkg"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+
+            android:id="@+id/details_title"
+            style="@style/text_style"
+
+            android:text="诸葛亮的好"
+            />
+
+    </LinearLayout>
+    <View
+        style="@style/horizontal_divider_light"
+        />
+
+</LinearLayout>
