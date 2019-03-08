@@ -1,27 +1,27 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml:1:1-6:12
-INJECTED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml:1:1-6:12
-INJECTED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml:1:1-6:12
+ADDED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml:1:1-6:12
 	package
-		ADDED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml:2:5-47
-		INJECTED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml
-		INJECTED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml
+		ADDED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml:2:5-47
+		INJECTED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml
+		INJECTED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml:1:11-69
+		ADDED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml:1:11-69
 application
-ADDED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml:4:3-18
+ADDED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml:4:3-18
 uses-sdk
-INJECTED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml
-INJECTED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml
-INJECTED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml
-INJECTED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml
+INJECTED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml
+INJECTED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml
+INJECTED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml
+INJECTED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml
-		ADDED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml
-		INJECTED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml
+		INJECTED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml
+		ADDED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml
+		INJECTED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml
-		ADDED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml
-		INJECTED from D:\quanyingproject\ZhanQun\library-addition\src\main\AndroidManifest.xml
+		INJECTED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml
+		ADDED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml
+		INJECTED from /home/redwolfchao/AndroidStudioProjects/git/lihong/library-addition/src/main/AndroidManifest.xml
